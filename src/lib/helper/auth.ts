@@ -1,10 +1,9 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import type {
 	GetServerSidePropsContext,
 	NextApiRequest,
 	NextApiResponse,
 } from "next";
-import type { NextAuthOptions } from "next-auth";
 import { getServerSession } from "next-auth";
 
 // You'll need to import and pass this

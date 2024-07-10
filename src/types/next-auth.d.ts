@@ -2,16 +2,17 @@ import { JWT, Session, User } from "next-auth/next"
 
 declare module "next-auth" {
   interface Session {
-    accessToken: string
+    token: string
     user: {
-      id: string
-      accessToken: string
-    } & Session["user"]
+      id: string;
+			email: string;
+			name: string;
+    }
   }
   interface User {
-    access_token: string
-  }
-  interface JWT {
-    access_token: string
+    token: string
+		id: string;
+		email: string;
+		name: string;
   }
 }

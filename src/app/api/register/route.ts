@@ -8,7 +8,6 @@ export async function POST(req: Request, res: Response) {
 
 		console.log(
 			"%csrc/app/api/register/route.ts:8 response",
-			"color: #007acc;",
 			response
 		);
 

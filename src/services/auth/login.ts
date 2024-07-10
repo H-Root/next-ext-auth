@@ -8,7 +8,6 @@ export const login = (
 	xsrfToken: string | null
 ) => {
 	const headers = new Headers({
-		method: "POST",
 		Cookie: `laravel_session=${sessionKey}`,
 		"Content-Type": "application/json",
 	});
@@ -19,6 +18,7 @@ export const login = (
 
 	return fetch(ENDPOINTS.LOGIN, {
 		headers,
-		body: JSON.stringify({}),
+		body: JSON.stringify(data),
+		method: "POST",
 	});
 };

@@ -5,5 +5,6 @@ export const prefixUrl = (url: string) => {
 export const ENDPOINTS = {
 	GET_CSRF_COOKIE: prefixUrl("sanctum/csrf-cookie"),
 	LOGIN: prefixUrl("api/login"),
-  REGISTER: prefixUrl("api/register"),
+	REGISTER: prefixUrl("api/register"),
+	PRODUCTS: prefixUrl("api/products"),
 } as const;
